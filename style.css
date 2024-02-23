@@ -1,0 +1,103 @@
+/* font here */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    font-family: "Josefin Sans", sans-serif;
+ 
+}
+
+/* header */
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/oilrefinery.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;      
+    padding: 1rem 3rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 150px;  
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    font-size: .9rem;
+}
+
+/* menu button  ----------------------------*/
+.nav-links ul li::after{
+    content: ' ';
+    width: 0%;
+    height: 2px;
+    background-color: #32a848;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+/* ----------------------------------------- */
+
+.text-box{
+    width: 90%;
+    color: #32a848;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 3.5rem;
+}
+
+.text-box p{
+    margin: 20px 0 20px;
+    font-size: .95rem;
+    color: #fff;
+}
+
+.hero-btn{
+    display: inline-block;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 2rem;
+    padding: 12px 2rem;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+}
+
+.hero-btn:hover{
+    transition: all ease 0.3s;
+    background-color: #32a848;
+    border-color: #000;
+}
