@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B2W</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -12,15 +14,17 @@
     <section class="header">
         <nav>
             <a href="index.html"><img src="images/b2w-nobg.png" alt=""></a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()""></i>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About Us</a></li>
-                    <li><a href="#">Learn</a></li>
+                    <li><a href="#">Products</a></li>
                     <li><a href="#">Partnership</a></li>
                     <li><a href="#">Contact Us</a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
 
     <div class="text-box">
@@ -31,6 +35,75 @@
     </div>
     </section>
 
+
+
+
+     <!-- Products -->
+    <section class="Products" id="oils">
+        <div class="heading">
+            <h1>Types of Oil</h1>
+            <div class="oil-content">
+                <div class="oil_box">
+                    <img src="images/diesel_fuel.png" alt=""/>
+                    <h2>Diesel Fuel</h2>
+                    <p>Made from blablabla</p>
+                    <div class="oil_price">
+                        <span>$3.15 per gallon </span>
+                        <i class="fa fa-cart-plus"></i>
+                    </div>
+                </div>
+                <div class="oil_box">
+                    <img src="images/diesel_fuel.png" alt=""/>
+                    <h2>Diesel Fuel</h2>
+                    <p>Made from blablabla</p>
+                    <div class="oil_price">
+                        <span>$3.15 per gallon </span>
+                        <i class="fa fa-cart-plus"></i>
+                    </div>
+                </div>
+                <div class="oil_box">
+                    <img src="images/diesel_fuel.png" alt=""/>
+                    <h2>Diesel Fuel</h2>
+                    <p>Made from blablabla</p>
+                    <div class="oil_price">
+                        <span>$3.15 per gallon </span>
+                        <i class="fa fa-cart-plus"></i>
+                    </div>
+                </div>
+                <div class="oil_box">
+                    <img src="images/diesel_fuel.png" alt=""/>
+                    <h2>Diesel Fuel</h2>
+                    <p>Made from blablabla</p>
+                    <div class="oil_price">
+                        <span>$3.15 per gallon </span>
+                        <i class="fa fa-cart-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Partnership -->
+    <section class="Partnership">
+        <h1>Partners</h1>
+        <p>Register now and become a partner!<br>We offer </p>
+    </section>
+
+
+
+<!-- script for js on click menu/close -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+        
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
 
 
 </body>

@@ -8,6 +8,7 @@
     scroll-behavior: smooth;
     text-decoration: none;
     font-family: "Josefin Sans", sans-serif;
+    outline: red dashed 1px;
  
 }
 
@@ -100,4 +101,140 @@ nav img{
     transition: all ease 0.3s;
     background-color: #32a848;
     border-color: #000;
+}
+
+
+/* Close-Menu */
+nav .fa{
+    display: none;
+}
+
+
+
+/* ********************************************************************************* */
+/* Partnership */
+.Products{
+    background-color: #030415;
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.heading h1{
+    color: #32a848;
+    font-size: 3.5rem;
+    font-weight: bold;
+    padding-bottom: 25px;
+}
+
+.heading h2{
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.oil-content{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(auto,200px));
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.oil_box{
+    background-color: #32a848;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    padding: 35px 20px;
+    border-radius: 2rem;
+    width: 275px;
+}
+
+.oil_box img{
+    width: 200px;
+    height: 250px;
+    object-fit: contain;
+}
+/* h1{
+    font-size: 3rem;
+    font-weight: 600;
+} */
+
+/* p{
+    color: #000;
+    font: 1rem;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+} */
+
+
+
+/* ********************************************************************************* */
+/* Partnership */
+
+.Partnership{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+p{
+    color: #000;
+    font: 1rem;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 3rem;  
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #030415;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: all ease 0.3s;
+    }
+
+    nav .fa{
+        display: block;
+        color: #32a848;
+        margin: 10px;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    
+    .nav-links ul{
+        padding: 2rem;
+    }
+
+    .oil-content{
+        grid-template-columns: repeat(2, minmax(auto,200px));
+
+    }
 }
