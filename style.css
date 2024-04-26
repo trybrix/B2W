@@ -192,14 +192,14 @@ nav .fa{
     margin: auto;
     padding-top: 100px;
 }
-h1{
+.Partnership h1 {
     font-size: 3rem;
     font-weight: 600;
     text-align: left;
 
 }
 
-p{
+.Partnership p{
     color: #000;
     font: 1rem;
     font-weight: 300;
@@ -207,6 +207,72 @@ p{
     padding: 10px;
     text-align: left;
 
+} 
+
+.Partnership img{
+    width: 100vh;
+    height: 75vh;
+    display: flex;
+
+}
+
+
+/* Contact ***********************************************/
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ 
+}
+
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #000;
+}
+.contact .content p{
+    font-weight: 300;
+    color: #000;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container .contactInfo{
+    width: 50%;
+    display: flex; 
+    flex-direction: column;
+}
+
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background-color: #32a848;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
 }
 
 
