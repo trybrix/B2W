@@ -16,7 +16,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/oilrefinery.jpg);
+    background-image: linear-gradient(rgba(4,9,10,0.7), rgba(4,9,30,0.7)), url(images/oilrefinery.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -47,7 +47,7 @@ nav img{
 }
 
 .nav-links ul li a{
-    color: #fff;
+    color: #F2EBE3;
     font-size: .9rem;
 }
 
@@ -83,13 +83,13 @@ nav img{
 .text-box p{
     margin: 20px 0 20px;
     font-size: .95rem;
-    color: #fff;
+    color: #F2EBE3;
 }
 
 .hero-btn{
     display: inline-block;
-    color: #fff;
-    border: 1px solid #fff;
+    color: #F2EBE3;
+    border: 1px solid #F2EBE3;
     border-radius: 2rem;
     padding: 12px 2rem;
     font-size: 13px;
@@ -226,6 +226,7 @@ nav .fa{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: #030415;
  
 }
 
@@ -237,11 +238,11 @@ nav .fa{
 .contact .content h2{
     font-size: 36px;
     font-weight: 500;
-    color: #000;
+    color: #F2EBE3;
 }
 .contact .content p{
     font-weight: 300;
-    color: #000;
+    color: #F2EBE3;
 }
 
 .container{
@@ -262,6 +263,11 @@ nav .fa{
     position: relative;
     padding: 20px 0;
     display: flex;
+    margin-left: 322px;
+}
+
+.container .contactInfo .text{
+    color: #f2ebe3;
 }
 
 .container .contactInfo .box .icon{
@@ -275,10 +281,104 @@ nav .fa{
     font-size: 22px;
 }
 
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 1rem;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .contactInfo .box .text h3{
+    font-weight: 500;
+    color: #32a848;
+}
+
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background-color: #FFF;
+}
+
+.contactForm h2{
+    font-size: 2rem;
+    color: #000;
+    font-weight: 500;
+}
+
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 1rem;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #b3b3b3;
+    outline: none;
+    resize: none;
+}
+
+.contactForm.inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 1rem;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.3s;
+    color: #666;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:focus ~ span{
+    color: #32a848;
+    font-size: .8rem;
+    transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background-color: #030415;
+    color: #F2EBE3;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Footer ***************************************************/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+
+}
+
+.footer h4{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.footer h5{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.footer p{
+    padding-top: 25px;
+}
 
 
 /* --------------------------------------------------------------------------------------------------------------------------------- */
-@media(max-width: 700px){
+@media(max-width: 1350px){
     .text-box h1{
         font-size: 3rem;  
     }
@@ -313,4 +413,20 @@ nav .fa{
         grid-template-columns: repeat(2, minmax(auto,200px));
 
     }
+
+    /* CONTACT US */
+    .contact{
+        padding: 30px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactInfo{
+        margin-bottom: 40px;
+    }
+    .container.contactInfo,
+    .contactForm{
+        width: 100%;
+    }
 }
+

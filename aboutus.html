@@ -4,11 +4,192 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>B2W - About Us</title>
+  <link rel="stylesheet" href="aboutus.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
-  <h1>
-    Testing
+  <section class="header">
+    <nav>
+        <a href="index.html"><img src="images/b2w-nobg.png" alt=""></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()""></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#whyus">Why Us?</a></li>
+                <li><a href="#ourlocations">Locations</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#ct">Contact Us</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="text-box">
+        <h1>About Us <br> - Back to the World -</h1>
+        <h2>Mission Statement</h2>
+        <p>"We aim to recycle used oil, making it reusable and reducing its environmental impact for various purposes.<br>
+            B2W seeks to  promote sustainability by minimizing pollution, reducing dependency on imported oils, and fostering community engagement."</p>
+            <!-- <a href="aboutus.html" class="hero-btn""> About us</a> -->
+    </div>
+  </section>
+
+
+  <section class="abouts" id="whyus">
+    <h1>Back to Us </h1>
+    <p>Learn More about our cause!</p>
+
+    <div class="row">
+      <div class="why-col">
+        <h3>Impact</h3>
+        <p>We provide a sustainable waste management solution that<br> can be repurposed.<br>
+          Reusable fuel is eco friendly which can reduced greenhouse gas and <br>
+          carbon emission. Save money by not outsourcing for fuel.<br>
+          Individuals may receive incentive as they are contributing to our<br> 
+          missions and compensated based on the amount of used oil <br>
+          they provide to us.
+          </p>
+      </div>
+
+      <div class="why-col">
+        <h3>Uniqueness </h3>
+        <p>Our global impact.<br>
+          Anyone can contribute to this environmental effort as it will decrease<br> 
+          environmental pollution and contamination of water, air, and habitats.
+          </p>
+      </div>
+
+      <div class="why-col">
+        <h3>Why Us?</h3>
+        <p>The circular flow of our business keeps money in a sustainable loop<br>
+            between households and businesses. We provide transparency about<br> 
+            our operations and impact. </p>
+      </div>
+
+      
+    </div>
+  </section>
     
-  </h1>
+
+<!-- Locations --------------------------------------------------------------- -->
+  <section class="location" id="ourlocations">
+    <h1>Our Locations</h1>
+    <p>We currently only operate around United States, 
+      <br> however B2W plan to build facilities worldwide.</p>
+
+    <div class="row">
+      <div class="loc-col">
+        <img src="images/oilrefinery_night_1.avif" >
+        <div class="layer">
+          <h3>New York</h3>
+        </div>
+      </div>
+
+      <div class="loc-col">
+        <img src="images/oilrefinery_night_2.avif" >
+        <div class="layer">
+          <h3>Utah</h3>
+        </div>
+      </div>
+
+      <div class="loc-col">
+        <img src="images/oilrefinery_night_4.avif" >
+        <div class="layer">
+          <h3>Texas</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- reviews------------------------------- -->
+  <section class="reviews">
+    <h1>What our Partners Says</h1>
+    <!-- <p>asldkjfhalskjhdf<br></p> -->
+
+    <div class="row">
+      <div class="rev-col">
+        <img src="images/pfp_DA.jpg">
+        <div>
+          <p>“If we do make the transition to renewables at the lightning speed required, <br>
+            humankind will forever look back on this generation with gratitude, for we are indeed <br>
+            the first to truly understand the problem — and the last with a chance to <br>
+            do anything about it.”</p>
+          <h3>Sir David Attenborough</h3>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+
+        </div>
+      </div>
+
+      <div class="rev-col">
+        <img src="images/pfp_GT.jpg">
+        <div>
+          <p>“Today we use 100 million barrels of oil every single day. <br>
+            There are no politics to change that. There are no rules to keep that oil in the ground. <br>
+            So we can no longer save the world by playing by the rules, <br>
+            because the rules have to be changed."</p>
+          <h3>Greta Thunberg</h3>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+
+        </div>
+      </div>
+
+      
+    </div>
+  </section>
+
+<!-- contact us ------------------------------------------------->
+  <section class="cta" id="ct">
+    <h1>Join now to be a partner of <br>Back to the World</h1>
+    <a href="contactus.html" class="hero-btn"> Contact Us</a>
+  </section>
+
+
+
+
+
+<!-- Footer -->
+    
+    <section class="footer">
+        <h4>About Us</h4>
+        <h5>“We believe mimicking nature's cyclical processes will help us restore 
+            <br>the earth. We leverage technology to repurpose used cooking oil to biofuel. 
+            <br>We're sustained by the produce of this earth, now it's time for our <br>
+            actions to give back to the world.”
+        </h5>
+        <div class="icons">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+        </div>
+        <p>
+            <i class="fa fa-copyright" aria-hidden="true"></i>
+            Copyright 2024 B2W. All Rights Reserved.
+        </p>
+    </section>
+
+
+<!-- script for js on click menu/close -->
+<script>
+  var navLinks = document.getElementById("navLinks");
+  function showMenu(){
+      navLinks.style.right = "0";
+      
+  }
+  function hideMenu(){
+      navLinks.style.right = "-200px";
+  }
+</script>
+
+
 </body>
 </html>
