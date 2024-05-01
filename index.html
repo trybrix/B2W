@@ -47,36 +47,36 @@
                 <div class="oil_box">
                     <img src="images/diesel_fuel.png" alt=""/>
                     <h2>Cooking Oil</h2>
-                    <p>Made from blablabla</p>
+                    <p>Please reach out to a specific type of oil.</p>
                     <div class="oil_price">
-                        <span>$3.15 per gallon </span>
+                        <span>$2.50 per gallon </span>
                         <i class="fa fa-cart-plus"></i>
                     </div>
                 </div>
                 <div class="oil_box">
                     <img src="images/motor_oil.png" alt=""/>
                     <h2>Motor Oil</h2>
-                    <p>Made from blablabla</p>
+                    <p>Synthetic Motor Oil, Synthetic Blend Motor Oil, or Conventional Motor Oil.</p>
                     <div class="oil_price">
-                        <span>$3.15 per gallon </span>
+                        <span>$3.95 per gallon </span>
                         <i class="fa fa-cart-plus"></i>
                     </div>
                 </div>
                 <div class="oil_box">
                     <img src="images/diesel_fuel.png" alt=""/>
                     <h2>Renewable Fuel</h2>
-                    <p>Made from blablabla</p>
+                    <p>Made from our biofuels to produce a high quality fuel.</p>
                     <div class="oil_price">
-                        <span>$3.15 per gallon </span>
+                        <span>$3.55 per gallon </span>
                         <i class="fa fa-cart-plus"></i>
                     </div>
                 </div>
                 <div class="oil_box">
                     <img src="images/diesel_fuel.png" alt=""/>
                     <h2>Diesel Fuel</h2>
-                    <p>Made from blablabla</p>
+                    <p>Made from the remnants of fats taken from types of oil to produce a high quality fuel.</p>
                     <div class="oil_price">
-                        <span>$3.15 per gallon </span>
+                        <span>$2.99 per gallon </span>
                         <i class="fa fa-cart-plus"></i>
                     </div>
                 </div>
@@ -189,6 +189,23 @@
         navLinks.style.right = "-200px";
     }
 </script>
+
+
+<!-- script for message sent -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var form = document.querySelector(".contactForm form");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            alert("Your message has been sent!");
+
+            form.reset();
+        });
+    });
+</script>
+
 
 
 </body>

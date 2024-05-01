@@ -201,7 +201,7 @@ nav .fa{
 
 .Partnership p{
     color: #000;
-    font: 1rem;
+    font-size: 1.25rem;
     font-weight: 300;
     line-height: 22px;
     padding: 10px;
@@ -213,6 +213,7 @@ nav .fa{
     width: 100vh;
     height: 75vh;
     display: flex;
+    margin: auto;
 
 }
 
