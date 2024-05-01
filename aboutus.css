@@ -152,7 +152,7 @@ p{
     background-color: #030415;
     border-radius: 10px;
     margin-bottom: 18%;
-    margin-top: 10%;
+    margin-top: 5%;
     padding: 20px 12px;
     box-sizing:  border-box;
     transition: 0.5s;
@@ -167,6 +167,10 @@ h3{
 
 .why-col:hover {
     box-shadow: 0 0 20px 0px rgba(50, 168, 72, 0.5);
+}
+
+.abouts a{
+    margin-top: 10px;   
 }
 
 
